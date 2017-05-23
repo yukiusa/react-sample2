@@ -43,7 +43,11 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, './dist'),
+        historyApiFallback: {
+            index: 'index.html'
+        },
         port: 8080,
+
     },
     plugins: debug ? [] : [
         new webpack.optimize.DedupePlugin(),

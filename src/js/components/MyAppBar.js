@@ -4,7 +4,10 @@
 import React from "react";
 import {AppBar} from "react-toolbox/lib/app_bar";
 import Navigation from "react-toolbox/lib/navigation";
+import {Button, IconButton} from 'react-toolbox/lib/button';
 import theme from "./MyAppBar.css";
+
+
 
 const GithubIcon = () => (
     <svg viewBox="0 0 284 277">
@@ -13,12 +16,19 @@ const GithubIcon = () => (
 );
 
 export default class MyAppBar extends React.Component {
+    constructor() {
+        super();
+    }
+
     render() {
         const title = "ゆきうさラボ"
         return (
             <div>
                 <AppBar title={title} leftIcon='menu' rightIcon={<GithubIcon />} theme={theme}>
                     <Navigation type='horizontal'>
+                        <Button label="Home" href="/" />
+                        <Button label="About" href="/about" />
+                        <Button label="Feature" href="/feature" />
                     </Navigation>
                 </AppBar>
             </div>

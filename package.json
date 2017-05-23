@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "watch:js": "webpack -w",
-    "watch:server": "webpack-dev-server --inline --hot",
+    "watch:server": "webpack-dev-server --inline --hot" ,
     "watch": "concurrent \"npm run watch:js\" \"npm run watch:server\""
   },
   "dependencies": {
@@ -21,6 +21,8 @@
     "react-addons-transition-group": "^15.5.2",
     "react-css-themr": "^2.1.2",
     "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "react-tap-event-plugin": "^2.0.1",
     "react-toolbox": "^2.0.0-beta.8",
     "style-loader": "^0.17.0"
