@@ -24,13 +24,7 @@ export default class MyAppBar extends React.Component {
         const title = "ゆきうさラボ"
         return (
             <div>
-                <AppBar title={title} leftIcon='menu' rightIcon={<GithubIcon />} theme={theme}>
-                    <Navigation type='horizontal'>
-                        <Button label="Home" href="/" />
-                        <Button label="About" href="/about" />
-                        <Button label="Feature" href="/feature" />
-                    </Navigation>
-                </AppBar>
+                <AppBar title={title} leftIcon='menu' rightIcon={<GithubIcon />} theme={theme} />
             </div>
         );
     }

@@ -5,12 +5,15 @@
 import React from "react";
 import Header from "../components/Header";
 import Body from "../components/Body";
+import MyNavi from "../components/MyNavi";
+
 export default class Feature extends React.Component {
     render() {
         return (
             <div>
                 <Header />
-                <h1>Feature</h1>
+                <MyNavi />
+                <h1>Input</h1>
                 <Body />
             </div>
         )
